@@ -19,6 +19,12 @@ class Httpcat100300(SequentialTaskSet  ):
         self.client.get("/300")
         self.interrupt()
 
+    @task
+    def get_status_100(self):
+        self.client.get("/400")
+        self.interrupt()
+
+
 
 
 
